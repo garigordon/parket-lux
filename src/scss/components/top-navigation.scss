@@ -1,5 +1,8 @@
 .top-navigation {
 	padding: 0 15px 15px;
+  @media (max-width: 400px) {
+    padding-bottom: 0;
+  }
 	a {
 	    display: block;
 	    float: left;

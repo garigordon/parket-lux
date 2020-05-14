@@ -333,6 +333,10 @@ h2, h3, h4, h5, h6 {
   padding: 10px 0;
 }
 
+h4, .h4 {
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
 }
@@ -344,6 +348,12 @@ a:hover {
   height: 180px;
   padding: 10px 0 0;
   position: relative;
+}
+@media (max-width: 991px) {
+  .header {
+    height: auto;
+    padding-bottom: 17px;
+  }
 }
 .header .header-column {
   padding-right: 15px;
@@ -416,6 +426,11 @@ a:hover {
 .top-navigation {
   padding: 0 15px 15px;
 }
+@media (max-width: 400px) {
+  .top-navigation {
+    padding-bottom: 0;
+  }
+}
 .top-navigation a {
   display: block;
   float: left;
@@ -431,6 +446,12 @@ a:hover {
   margin-left: 10px;
   background: url(../images/instagram.svg) no-repeat center center;
   border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .social-item {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .contacts-list {
@@ -507,6 +528,7 @@ a:hover {
 .section-home-page .column {
   padding-right: 15px;
   padding-left: 15px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .section-home-page .column {
@@ -547,6 +569,16 @@ a:hover {
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
+}
+.section-home-page .column-half {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section-home-page .column-half {
+    width: 25%;
+  }
 }
 
 .article-content {
@@ -649,5 +681,71 @@ a:hover {
   height: 60px;
   text-align: center;
   width: 220px;
+}
+
+.footer {
+  padding-top: 40px;
+}
+.footer .footer-menu {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer h4 {
+  color: #0068c8;
+  font-weight: bold;
+}
+.footer .links {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.footer .links li {
+  padding: 2px 0;
+}
+.footer .links li a {
+  text-decoration: none;
+  color: #333;
+}
+.footer .links li a:hover {
+  text-decoration: underline;
+  color: #0068c8;
+}
+.footer .bottom-information {
+  background-color: #fff;
+  margin: 20px 0 0px;
+  font-size: 12px;
+  padding: 20px 0;
+}
+.footer .column {
+  padding: 0 15px;
+}
+@media (min-width: 992px) {
+  .footer .column:first-child {
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .column:last-child {
+    width: 25%;
+  }
+}
+.footer__copy {
+  padding: 0 50px 0 15px;
+}
+.footer .column-mob {
+  padding: 0 15px;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  left: 50px;
+  text-decoration: none;
+  color: #000000;
+  padding: 1em;
+  display: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(50, 50, 50, 0.8);
+  padding: 5px 10px;
+  color: #eee;
 }
 /*# sourceMappingURL=styles.css.map */
