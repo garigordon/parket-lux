@@ -1,0 +1,64 @@
+.header {
+	height: 180px;
+	padding: 10px 0 0;
+	position: relative;
+	.header-column {
+		padding-right: 15px;
+		padding-left: 15px;
+		@media (min-width: 768px) {
+			width: 50%;
+		}
+
+		@media (min-width: 992px) {
+			width: 41.66666667%;
+		}
+	}
+
+	.header-search-block {
+		padding: 28px 0 0;
+		@media (min-width: 992px) {
+			width: 33.33333333%;
+		}
+	}
+
+	.contacts-column {
+		padding-right: 15px;
+		padding-left: 15px;
+		@media (min-width: 768px) {
+			width: 50%;
+		}
+
+		@media (min-width: 992px) {
+			width: 25%;
+		}	
+	}
+
+	.logo {
+		padding: 16px 22px 0 0;
+		display: block;
+		float: left;
+		@media (max-width: 400px) {
+			padding-top: 8px !important;
+		}
+		img {
+			@media (max-width: 991px) {
+				width: 200px;
+			}
+		}
+	} 
+
+	.toggle {
+	    width: 34px;
+	    height: 17px;
+	    background: url(../images/toggle.svg) bottom left no-repeat;
+	    border: 0;
+	    float: left;
+	    display: block;
+	    padding-top: 53px;
+	    z-index: 2;
+    	position: relative;
+    	@media (max-width: 400px) {
+    		padding-top: 45px;
+    	}
+	}
+}
