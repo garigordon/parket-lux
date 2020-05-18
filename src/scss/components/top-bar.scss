@@ -1,5 +1,5 @@
 .top-bar {
-  background: #364657;
+  background: #cfcfcf;
   padding: 5px 10px;
   max-width: 1200px;
   overflow: visible;
@@ -41,13 +41,13 @@
   &__enter,
   &__link {
     font-family: Roboto,sans-serif;
-    color: #fff;
+    color: #294886;
     font-size: 12px;
     text-decoration: none;
   }
 
   &__cart {
-    color: #fff;
+    color: #294886;
     padding: 0 0 0 25px;
     background: url(../images/header_top_cart.svg) no-repeat left 50%;
     text-decoration: none;
@@ -59,7 +59,7 @@
     background: #ff5100;
     border-radius: 10px;
     display: inline-block;
-    color: #fff;
+    color: #294886;
     font-size: 10px;
     padding: 3px 4px;
     height: 16px;
@@ -70,7 +70,7 @@
 
   &__welcome {
     padding: 0 0 0 6px;
-    color: #fff;
+    color: #294886;
     font-size: 12px;
     margin: 4px 0 0;
     display: inline-block;
@@ -80,7 +80,7 @@
     font-family: Roboto,sans-serif;
     font-size: 12px;
     float: left;
-    color: #fff;
+    color: #294886;
     margin: -3px 0 0;
     text-align: right;
     text-decoration: none;

@@ -1,62 +1,79 @@
 .footer {
-  padding-top: 40px;
-  .footer-menu {
-    width: 25%;
-    padding: 0 15px;
+  background-color: #294886;
+  .container {
+    padding: 50px 115px 15px;
   }
 
-  h4 {
-    color: #0068c8;
-    font-weight: bold;
-  }
+  .search-block {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    input[type=text] {
+      border: 1px #eeeeee solid;
+      padding: 2px 2px 2px 20px;
+      vertical-align: middle;
+      line-height: 48px;
+      flex: 1 1;
+      height: 46px;
+      font-size: 14px;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #333;
+      box-sizing: border-box;
+      border-radius: 0;
+    }
 
-  .links {
-    list-style-type: none;
-    padding-left: 0px;
-    li {
-      padding: 2px 0;
-      a {
-        text-decoration: none;
-        color: #333;
-        &:hover {
-          text-decoration: underline;
-          color: #0068c8;
-        }
-      }
+    input[type=submit] {
+      background-color: #4f7fd6;
+      color: #fff;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+      border: none;
+      line-height: 46px;
+      text-transform: uppercase;
+      flex: 90px 0;
+      padding: 0;
+      height: 46px;
+      border-radius: 0;
     }
   }
 
-  .bottom-information {
-    background-color: #fff;
-    margin: 20px 0 0px;
+  .suggestion {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #cfcfcf;
+    font-style: italic;
+    padding-top: 5px;
     font-size: 12px;
-    padding: 20px 0;
+    span {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .info-lists {
+    max-width: 940px;
+    margin-top: 38px;
+    margin-bottom: 35px;
+  }
+
+  .title-footer {
+    border-bottom: 1px solid #687387;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+    span {
+      margin-bottom: 0;
+      border-bottom: 2px solid #687387;
+      padding-bottom: 15px;
+      color: #fff;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      display: block;
+    }
   }
 
   .column {
+    width: 33.33%;
     padding: 0 15px;
-    &:first-child {
-      @media (min-width: 992px) {
-        width: 75%;
-      }
-    }
-
-    &:last-child {
-      @media (min-width: 992px) {
-        width: 25%;
-      }
-    }
-  }
-
-  &__copy {
-    padding: 0 50px 0 15px;
-  }
-
-  .column-mob {
-    padding: 0 15px;
-  }
-
-  .link-footer {
-
   }
 }
