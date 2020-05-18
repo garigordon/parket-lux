@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Starter Kit</title>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700%7COpen+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<root>
+  <div class="gtk_menu slideout-menu">
+    <div class="slideout-menu__title">
+      <h4>Каталог товаров</h4>
+      <span class="btn_click">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"/></svg>
+      </span>
+    </div>
+    <form class="search-form" method="get" action="#">
+      <div class="search-form__item">
+        <input class="search-form__input" autocomplete="off" id="input-search-key" name="q" value="" placeholder="Поиск по сайту" type="text">
+        <input class="search-form__submit" value="Найти" type="submit">
+      </div>
+    </form>
+    <div class="menu_main">
+      <div class="slimScrollDiv">
+        <div class="mb-body-left fltr">
+          <div class="accordion pure-menu-list">
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="#">Паркетный лак, масло, тонировка, уход</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="#">Лак паркетный:</a>
+                  <ul class="submenu">
+                    <li><a href="#">Лак водный</a></li>
+                    <li><a href="#">Лак кислотный</a></li>
+                    <li><a href="#">Лак уретан-алкидный</a></li>
+                    <li><a href="#">Лак НЦ, ЭП, DD</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_varnish_oil_toning-care/primer/">Лак-грунтовка:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/primer/gruntovka_water/">Грунтовка водная</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/primer/primer_solvents/">Грунтовка на  растворителях</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_varnish_oil_toning-care/oil_dlja_parketa/">Масло паркетное:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/oil_dlja_parketa/oil_for_external_works/">Масло для внешних работ</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/oil_dlja_parketa/oil_for_domestic_work/">Масло для внутренних работ</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_varnish_oil_toning-care/toning/">Тонирующие составы:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/toning/toning_lubricant/">Тонировка маслянная</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/toning/tinting_solvent/">Тонировка на растворителе</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_varnish_oil_toning-care/putty_for_wood_flooring/">Шпаклевка</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/">Средства по уходу:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_parketnym_lakom/">Уход за паркетным лаком</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_parketnym_maslom/">Уход за паркетным маслом</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_terrasnoy_doskoy/">Уход за террасной доской</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_kamennym_polom/">Уход за каменным полом</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_kovrami/">Уход за коврами</a></li>
+                    <li><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_sportivnymi_elastichnymi_pokrytiyami_pvc_i_reziny/">Уход за ламинатом, линолеумом, резиной и PVC</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="/catalog/parquet_glue/">Паркетный клей</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_glue/water_dispersion_glue/">Воднодисперсионный клей</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_glue/glue_on_the_solvents/">Клей на растворителях</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_glue/polyurethane_adhesive/">Полиуретановый клей:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/parquet_glue/polyurethane_adhesive/two-component_polyurethane_adhesive/">Двухкомпонентный клей</a></li>
+                    <li><a href="/catalog/parquet_glue/polyurethane_adhesive/odnokomponentnyy_poliuretanovyy_kley/">Однокомпонентный клей</a></li>
+                    <li><a href="/catalog/parquet_glue/polyurethane_adhesive/silanovyy_kley/">Силановый клей</a></li>
+                    <li><a href="/catalog/parquet_glue/polyurethane_adhesive/kley_na_ms-polimerakh/">Клей на MS-полимерах</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_glue/ground/">Грунтовка:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/parquet_glue/ground/dispersionnaya_gruntovka/">Дисперсионная грунтовка</a></li>
+                    <li><a href="/catalog/parquet_glue/ground/gruntovka_na_rastvoritelyakh/">Грунтовка на растворителях</a></li>
+                    <li><a href="/catalog/parquet_glue/ground/poliuretanovaya_gruntovka/">Полиуретановая грунтовка</a></li>
+                    <li><a href="/catalog/parquet_glue/ground/epoksidnaya_gruntovka/">Эпоксидная грунтовка</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="/catalog/parquet/">Паркет</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/parquet_sht/">Штучный паркет</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/massive_board/">Массивная доска</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/parquet_board/">Паркетная доска</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/laminated_flooring/">Ламинат</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/modular_flooring/">Модульный паркет</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/khudozhestvennyj_parket/">Художественный паркет</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/industrial_parquet/">Промышленный паркет</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet/ingenernaja_doska/">Инженерная доска</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/">Материалы для стяжки</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/cement/">Цемент</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/cementnie_remontnie_cmesi/">Ремонтные смеси</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/nalivnie_poli/">Наливные полы</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/">Грунтовочные составы:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/vodno-dispersionnyy_grunt/">Водно-дисперсионный грунт</a></li>
+                    <li><a href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/poliuretanovyy_grunt/">Полиуретановый грунт</a></li>
+                    <li><a href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/epoksidnyy_grunt/">Эпоксидный грунт</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="/catalog/skirting_thresholds_molded_materials/">Сопутствующие товары</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/">Плинтус, порожки:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/metal_plinthus/">Металлический плинтус</a></li>
+                    <li><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/plastic_plintus/">Пластиковый плинтус</a></li>
+                    <li><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/schponirovanij_plinthus/">Ламинированный плинтус</a></li>
+                    <li><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/plinthus_made_of_wood/">Плинтус из массива дерева</a></li>
+                    <li><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/porozhki_ugolok_profil_okantovoshnij/">Порожки, профиль, уголки</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/skirting_thresholds_molded_materials/fanera_lagi/">Фанера, лаги</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/skirting_thresholds_molded_materials/substrate/">Подложка</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="/catalog/oborudovanie/">Оборудование</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/oborudovanie/tsiklevochnye_mashiny/">Циклевочные машины:</a>
+                  <ul class="submenu">
+                    <li><a href="/catalog/oborudovanie/tsiklevochnye_mashiny/shlifovalnye_mashiny/">Шлифовальные машины</a></li>
+                    <li><a href="/catalog/oborudovanie/tsiklevochnye_mashiny/zapchasti_shlifmashin/">Запчасти шлифмашин</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/oborudovanie/abrasives/">Абразив</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/oborudovanie/oborudovanie_i_instrument/">Инструмент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="/catalog/parquet_works/">Паркетные работы</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_works/tsiklevka_shlifovka_parketa/">Циклевка шлифовка паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_works/remont_i_restavratsiya_parketa/">Ремонт и реставрация паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_works/tonirovka_parketa/">Тонировка паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_works/ukladka_parketa/">Укладка паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/parquet_works/ustroystvo_styazhki_i_pol_na_lagakh/">Стяжка и пол на лагах</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a class="pure-menu-link" href="/catalog/polimernye_poly/">Полимерные полы</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/polimernye_poly/nalivnye_polimernye_poly/">Полимерные наливные полы</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/polimernye_poly/finishnye_polimernye_pokrytiya/">Финишные покрытия</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/polimernye_poly/gruntovochnye_sostavy/">Грунтовочные составы</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a class="pure-menu-link" href="/catalog/polimernye_poly/remontnye_sostavy_i_smesi/">Ремонтные составы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gtk_main wrapper slideout-panel">
+    <div class="top-bar hidden-xs">
+      <div class="row-line">
+        <div class="column-back">
+          <a href="#" class="top-bar__back">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+              <path fill="#fff" d="M6.293 13.707l-5-5c-0.391-0.39-0.391-1.024 0-1.414l5-5c0.391-0.391 1.024-0.391 1.414 0s0.391 1.024 0 1.414l-3.293 3.293h9.586c0.552 0 1 0.448 1 1s-0.448 1-1 1h-9.586l3.293 3.293c0.195 0.195 0.293 0.451 0.293 0.707s-0.098 0.512-0.293 0.707c-0.391 0.391-1.024 0.391-1.414 0z"></path>
+            </svg>
+            <span class="top-bar__welcome">Назад</span>
+          </a>
+        </div>
+        <div class="column row-line">
+          <div class="column-left row-line row-line__between">
+            <a href="#" class="top-bar__link">Вы смотрели</a>
+            <a href="#" class="top-bar__link">Контакты</a>
+            <a href="tel:74957600518" class="top-bar__link">(495) 760 05 18</a>
+            <a href="tel:79163639116" class="top-bar__link">(916) 363 91 16</a>
+          </div>
+          <div class="column-right row-line row-line__between">
+            <a href="#" class="top-bar__cart js-manual-popover-autohide" data-toggle="popover" data-content="<b>Добавлено в корзину</b>" data-placement="bottom" data-html="true" data-trigger="manual" data-original-title="" title="">
+              Корзина <span class="js-cart-items-count top-bar__count">0</span>
+            </a>
+            <a href="#" class="top-bar__enter">Вход</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header fixed-top-centered">
+      <div class="row-line row-line__center">
+        <div class="column-logo">
+          <a href="#" class="header__logo">
+            <img src="assets/images/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="column-search">
+          <form class="search-form" method="get" action="#">
+            <div class="search-form__item">
+              <input class="search-form__input" placeholder="Поиск по сайту" type="text">
+              <input class="search-form__submit" value="Найти" type="submit">
+            </div>
+            <p class="search-form__text">Например:
+              <a class="search-form__exemple" href="#">Клей Carbo PUR</a>
+            </p>
+          </form>
+        </div>
+        <div class="column-phone">
+          <div class="phone_numbers">
+            <div class="phone_numbers__item">
+              <small class="phone_numbers__code">(495)</small>
+              <a class="phone_numbers__phone" href="tel:74957600518">760 05 18</a>
+              <i class="phone_numbers__text">Сделать заказ</i>
+            </div>
+            <div class="phone_numbers__item">
+              <small class="phone_numbers__code">(916)</small>
+              <a class="phone_numbers__phone" href="tel:79163639116">363 91 16</a>
+              <i class="phone_numbers__text">Консультация</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header mobile-version">
+      <div class="row-line">
+        <div class="column-l">
+          <button class="hamburger btn-menu hamburger--collapse js-hamburger" type="button">
+            <em>меню</em>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+          </button>
+        </div>
+        <div class="column-c">
+          <a href="#" class="header__logo">
+            <img src="assets/images/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="column-r row-line__between">
+          <a href="tel:+74957600518" class="phone">
+            <img src="assets/images/phone.svg" alt="" title="">
+          </a>
+          <a href="#" class="basket js-manual-popover-autohide" data-toggle="popover" data-content="<b>Добавлено в корзину</b>" data-placement="bottom" data-html="true" data-trigger="manual" data-original-title="" title="">
+            <img src="assets/images/cart.svg" alt="" title="">
+            <span class="count js-cart-items-count cart-items-count">0</span>
+          </a>
+        </div>
+      </div>
+      <div class="top-bar-mob">
+        <a href="#" class="link left js-back" data-prev="">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+            <path fill="#fff" d="M6.293 13.707l-5-5c-0.391-0.39-0.391-1.024 0-1.414l5-5c0.391-0.391 1.024-0.391 1.414 0s0.391 1.024 0 1.414l-3.293 3.293h9.586c0.552 0 1 0.448 1 1s-0.448 1-1 1h-9.586l3.293 3.293c0.195 0.195 0.293 0.451 0.293 0.707s-0.098 0.512-0.293 0.707c-0.391 0.391-1.024 0.391-1.414 0z"></path>
+          </svg>
+        </a>
+        <a href="#" class="link">Как купить</a>
+        <a href="#" class="link">Вы смотрели</a>
+        <a href="#" class="link">Контакты</a>
+      </div>
+    </header>
+    <nav class="nav-menu hidden-xs">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link--active">Как купить</a></li>
+        <li class="nav-menu__item"><a href="#" class="nav-menu__link">ОПЛАТА И ДОСТАВКА</a></li>
+        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Контакты</a></li>
+        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Задайте вопрос</a></li>
+        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Производители</a></li>
+      </ul>
+    </nav>
+    <main id="main" class="main">
+      <div class="row-line">
+        <div class="sidebar-left hidden-xs is-affixed">
+          <div class="sidebar-left__inner">
+            <div class="title title--orange">
+              <h2 class="icon">КАТАЛОГ ТОВАРОВ</h2>
+            </div>
+            <ul class="dropdown dropdown-vertical">
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/parquet_varnish_oil_toning-care/">Паркетный лак, масло, тонировка, уход</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_varnish_oil_toning-care/lacquer_dlja_parketa/">Лак паркетный:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/lacquer_dlja_parketa/Laquer_water/">- Лак водный</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/lacquer_dlja_parketa/acid_lac/">- Лак кислотный</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/lacquer_dlja_parketa/laquer_urethane-alkyd/">- Лак уретан-алкидный</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/lacquer_dlja_parketa/lak_nz_ep/">- Лак НЦ, ЭП, DD</a></p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_varnish_oil_toning-care/primer/">Лак-грунтовка:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/primer/gruntovka_water/">- Грунтовка водная</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/primer/primer_solvents/">- Грунтовка на  растворителях</a></p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_varnish_oil_toning-care/oil_dlja_parketa/">Масло паркетное:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/oil_dlja_parketa/oil_for_external_works/">- Масло для внешних работ</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/oil_dlja_parketa/oil_for_domestic_work/">- Масло для внутренних работ</a></p>
+                  </li>
+                  <li class="last">
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_varnish_oil_toning-care/toning/">Тонирующие составы:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/toning/toning_lubricant/">- Тонировка маслянная</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/toning/tinting_solvent/">- Тонировка на растворителе</a></p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_varnish_oil_toning-care/putty_for_wood_flooring/">Шпаклевка</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/">Средства по уходу:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_parketnym_lakom/">- Уход за паркетным лаком</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_parketnym_maslom/">- Уход за паркетным маслом</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_terrasnoy_doskoy/">- Уход за террасной доской</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_kamennym_polom/">- Уход за каменным полом</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_kovrami/">- Уход за коврами</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_varnish_oil_toning-care/sredstva_po_ukhodu/ukhod_za_sportivnymi_elastichnymi_pokrytiyami_pvc_i_reziny/">- Уход за ламинатом, линолеумом, резиной и PVC</a></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/parquet_glue/">Паркетный клей</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_glue/water_dispersion_glue/">Воднодисперсионный клей</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_glue/glue_on_the_solvents/">Клей на растворителях</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_glue/polyurethane_adhesive/">Полиуретановый клей:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/polyurethane_adhesive/two-component_polyurethane_adhesive/">- Двухкомпонентный клей</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/polyurethane_adhesive/odnokomponentnyy_poliuretanovyy_kley/">- Однокомпонентный клей</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/polyurethane_adhesive/silanovyy_kley/">- Силановый клей</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/polyurethane_adhesive/kley_na_ms-polimerakh/">- Клей на MS-полимерах</a></p>
+                  </li>
+                  <li class="last">
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_glue/ground/">Грунтовка:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/ground/dispersionnaya_gruntovka/">- Дисперсионная грунтовка</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/ground/gruntovka_na_rastvoritelyakh/">- Грунтовка на растворителях</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/ground/poliuretanovaya_gruntovka/">- Полиуретановая грунтовка</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/parquet_glue/ground/epoksidnaya_gruntovka/">- Эпоксидная грунтовка</a></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/parquet/">Паркет</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/parquet_sht/">Штучный паркет</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/massive_board/">Массивная доска</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/parquet_board/">Паркетная доска</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/laminated_flooring/">Ламинат</a>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/modular_flooring/">Модульный паркет</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/khudozhestvennyj_parket/">Художественный паркет</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/industrial_parquet/">Промышленный паркет</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet/ingenernaja_doska/">Инженерная доска</a>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/">Материалы для стяжки</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/cement/">Цемент</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/cementnie_remontnie_cmesi/">Ремонтные смеси</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/nalivnie_poli/">Наливные полы</a>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/">Грунтовочные составы:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/vodno-dispersionnyy_grunt/">- Водно-дисперсионный грунт</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/poliuretanovyy_grunt/">- Полиуретановый грунт</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/mixtures_and_preparations_for_the_installation_and_repair_ties/gruntovka_dlja_stjagki/epoksidnyy_grunt/">- Эпоксидный грунт</a></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/skirting_thresholds_molded_materials/">Сопутствующие товары</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/">Плинтус, порожки:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/metal_plinthus/">- Металлический плинтус</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/plastic_plintus/">- Пластиковый плинтус</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/schponirovanij_plinthus/">- Ламинированный плинтус</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/skirting_thresholds_molded_materials/plintus_porogki/plinthus_made_of_wood/">- Плинтус из массива дерева</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="#">- Порожки, профиль, уголки</a></p>
+                  </li><li class="last">
+                  <p class="dropdown-level_2">
+                    <a class="text-bold" href="/catalog/skirting_thresholds_molded_materials/fanera_lagi/">Фанера, лаги</a>
+                  </p>
+                  <p class="dropdown-level_2">
+                    <a class="text-bold" href="/catalog/skirting_thresholds_molded_materials/substrate/">Подложка</a>
+                  </p>
+                </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/oborudovanie/">Оборудование</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/oborudovanie/tsiklevochnye_mashiny/">Циклевочные машины:</a>
+                    </p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/oborudovanie/tsiklevochnye_mashiny/shlifovalnye_mashiny/">- Шлифовальные машины</a></p>
+                    <p class="dropdown-level_3 text-small"><a href="/catalog/oborudovanie/tsiklevochnye_mashiny/zapchasti_shlifmashin/">- Запчасти шлифмашин</a></p>
+                  </li>
+                  <li class="last">
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/oborudovanie/abrasives/">Абразив</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/oborudovanie/oborudovanie_i_instrument/">Инструмент</a>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/parquet_works/">Паркетные работы</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_works/tsiklevka_shlifovka_parketa/">Циклевка шлифовка паркета</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_works/remont_i_restavratsiya_parketa/">Ремонт и реставрация паркета</a>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_works/tonirovka_parketa/">Тонировка паркета</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_works/ukladka_parketa/">Укладка паркета</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/parquet_works/ustroystvo_styazhki_i_pol_na_lagakh/">Стяжка и пол на лагах</a>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="dropdown-border"></div>
+                <a class="dir" href="/catalog/polimernye_poly/">Полимерные полы</a>
+                <ul>
+                  <li>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/polimernye_poly/nalivnye_polimernye_poly/">Полимерные наливные полы</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/polimernye_poly/finishnye_polimernye_pokrytiya/">Финишные покрытия</a>
+                    </p>
+                  </li>
+                  <li class="last">
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/polimernye_poly/gruntovochnye_sostavy/">Грунтовочные составы</a>
+                    </p>
+                    <p class="dropdown-level_2">
+                      <a class="text-bold" href="/catalog/polimernye_poly/remontnye_sostavy_i_smesi/">Ремонтные составы</a>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="sidebar-basket-block">
+              <div class="sidebar-basket-block__title"><a href="#">Ваша корзина</a></div>
+              <div class="sidebar-basket-block__body">
+                <form id="basket-form" method="post" action="">
+                  <div class="sidebar-basket-block__cartitem">
+                    <h4><a href="#">Лак Bona Novia полуматовый (10л)</a></h4>
+                    <div class="sidebar-basket-block__price">
+                      <span class="sidebar-basket-block__qty">1 шт</span>
+                      Цена: <strong class="sidebar-basket-block__text-orange">12 000 р</strong>
+                      <strong> / 5л</strong>
+                    </div>
+                  </div>
+                  <div class="sidebar-basket-block__cartitem">
+                    <h4><a href="#">Лак Bona Novia полуматовый (10л)</a></h4>
+                    <div class="sidebar-basket-block__price">
+                      <span class="sidebar-basket-block__qty">1 шт</span>
+                      Цена: <strong class="sidebar-basket-block__text-orange">12 000 р</strong>
+                      <strong> / 5л</strong>
+                    </div>
+                  </div>
+                </form>
+                <div class="sidebar-basket-block__cartresume">
+                  <h5>Сумма: 18 600 р</h5>
+                  <div class="sidebar-basket-block__cart_block_button">
+                    <a href="#">Перейти в корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-left__fav">
+              <a href="#" class="sidebar-left__fav-link">Отложенные товары</a>
+              (<span id="fav_items_count" class="sidebar-left__fav-count">0</span>)
+            </div>
+            <div class="watched-block">
+              <h4 class="watched-block__title">Вы смотрели</h4>
+              <div class="watched-block__body">
+                <div class="row-line">
+                  <div class="column">
+                    <a href="#">
+                      <img width="40" height="40" align="left" src="assets/images/big-photo.jpg" style="margin-right: 10px;" alt="Дуб &quot;АртПаркет&quot; - штучный паркет">
+                    </a>
+                  </div>
+                  <div class="column">
+                    <div class="product-special">
+                      <a title="Дуб &quot;АртПаркет&quot; - штучный паркет" href="#">Дуб "АртПаркет" - штучный паркет</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="sidebar-list-block">
+              <li class="sidebar-list-block__item">
+                <p class="sidebar-list-block__text">
+                  <img alt="новинка" src="assets/images/delivery_car.gif" align="left">
+                  <span>Доставляем интернет заказы в регионы России</span>
+                </p>
+              </li>
+              <li class="sidebar-list-block__item">
+                <p class="sidebar-list-block__text">
+                  <img alt="Оплата заказа" src="assets/images/pay_digital.gif" align="left">
+                  <span>Вы можете оплатить заказ курьеру наличными или через банк.</span>
+                </p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-header">
+            <div class="content-header__line">
+              <h2 class="content-header__title"><span>АВТОРИЗАЦИЯ</span></h2>
+            </div>
+            <div class="row-line breadcrumbs">
+            	<div class="column">
+	                <a class="breadcrumbs__link" href="#">Персональный раздел</a>
+            	</div>
+            </div>
+          </div>
+          <div class="page-wrapper">
+            <div class="login-page">
+            	<div class="login-page__form form-group">
+                <h5 class="login-page__title">Авторизуйтесь, что бы увидеть свои заказы.</h5>
+            		<p>При оформлении заказа Логину присвоено название указанного Вами Email, а пароль сгенерирован автоматитчески и выслан на этот  Email.</p>
+            		<form>
+            			<div class="form-group__item">
+            				<label>Логин:</label>
+            				<input class="form-control" placeholder="Ваш Email" type="text" value="" size="60">
+            			</div>
+            			<div class="form-group__item">
+            				<label>Пароль:</label>
+            				<input class="form-control" placeholder="Высылали на Email" type="text" value="" size="60">
+            			</div>
+            			<div class="form-group__item">
+            				<input type="checkbox" class="checkbox-input" id="remember">
+      						<label class="checkbox-label" for="remember">Запомнить пароль</label>
+            			</div>
+            			<div>
+            				<input type="submit" class="btn-submit" name="Login" value="Войти">
+            			</div>
+            		</form>
+            	</div>
+            	<div class="login-page__error-message">Неверный логин или пароль.</div>
+            	<p><a href="#" class="login-page__link">Забыли свой пароль?</a></p>
+            </div>
+            <div class="cabinet">
+              <div class="cabinet-block desktop">
+                <div class="row-line">
+                  <div class="column">
+                    <h2>Ваши последние заказы</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="cabinet-block mob-cabinet">
+                <div class="row-line">
+                  <div class="column">
+                    <h2>Ваши последние заказы</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row-line">
+          <div class="footer-column-left">
+            <div class="phone_numbers">
+              <div class="phone_numbers__item">
+                <a class="phone_numbers__phone" href="tel:+74957600518">+7(495) 760-05-18</a>
+                <i class="phone_numbers__text">сделать заказ по телефону</i>
+              </div>
+              <div class="phone_numbers__item">
+                <a class="phone_numbers__phone" href="tel:+79163639116">+7(916) 363-91-16</a>
+                <i class="phone_numbers__text">получить консультацию</i>
+              </div>
+              <p><a href="/" class="phone_numbers__basket">В корзине (<span>0</span>)</a></p>
+              <p><a href="/" class="phone_numbers__favorite">Отложенные (<span>0</span>)</a></p>
+            </div>
+          </div>
+          <div class="footer-column-center">
+            <form class="search-form" method="get" action="#">
+              <div class="search-form__item">
+                <input class="search-form__input" autocomplete="off" placeholder="Поиск по сайту" type="text">
+                <input class="search-form__submit" value="Найти" type="submit">
+              </div>
+              <p class="search-form__text">Например:
+                <a class="search-form__exemple" href="#">Клей Carbo PUR</a>
+              </p>
+            </form>
+          </div>
+          <div class="footer-column-right">
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="/">Просмотренные (0)</a></li>
+              <li class="footer-menu__item"><a href="/">Задать вопрос</a></li>
+              <li class="footer-menu__item"><a href="/">Как купить</a></li>
+              <li class="footer-menu__item"><a href="/">Оплата и доставка</a></li>
+              <li class="footer-menu__item"><a href="/">Возврат товара</a></li>
+              <li class="footer-menu__item"><a href="/">Вход<img style="width:23px; height:14px;" src="assets/images/header_top_login_black.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__text">Данный сайт носит информационный характер и не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации обращайтесь к менеджерам через форму «контакты» или по телефону: +7(495) 760-05-18.</p>
+        <p class="footer__copyright">Copyright © маркет-паркет – <a href="/" class="footer__link">продажа паркета, лаков, клеев</a></p>
+      </div>
+    </footer>
+  </div>
+</root>
+<script src="assets/js/vendor.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
