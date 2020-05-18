@@ -7,26 +7,98 @@
   <title>Web Starter Kit</title>
   <link media="all" rel="stylesheet" href="./css/vendor.css">
   <link media="all" rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700%7COpen+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 
 <body>
+  <root>
+  <div class="gtk_menu slideout-menu">
+    <div class="header-column">
+      <div class="row-line row-line__between">
+        <a href="#" class="logo">
+          <img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
+        </a>
+        <a class="toggle opened" href="#"> </a>
+      </div>
+      <div class="search-block">
+        <form action="#">
+          <div class="search-field">
+            <input type="text" name="q" value="" placeholder="Что вы ищете?">
+            <input name="s" type="submit" value="">
+          </div>
+        </form>
+      </div>
+      <nav class="nav-menu">
+        <p>Укладка паркета</p>
+        <ul>
+          <li><a href="#">Укладка штучного паркета</a></li>
+          <li><a href="#">Укладка массивной доски</a></li>
+          <li><a href="#">Укладка паркетной доски</a></li>
+          <li><a href="#">Укладка ламината</a></li>
+          <li><a href="#">Плинтус и порожки</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-menu">
+        <p>Восстановление паркета</p>
+        <ul>
+          <li><a href="#">Циклевка паркета</a></li>
+          <li><a href="#">Ремонт паркета</a></li>
+          <li><a href="#">Уход за паркетом</a></li>
+          <li><a href="#">Тонировка паркета</a></li>
+          <li><a href="#">Паркетная химия</a></li>
+          <li><a href="#">Паркетное оборудование</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-menu">
+        <p>Подготовка основания</p>
+        <ul>
+          <li><a href="#">Стяжка пола</a></li>
+          <li><a href="#">Пол на лагах</a></li>
+          <li><a href="#">Сухая стяжка Кнауф</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
   <div class="wrapper gtk_main slideout-panel">
-    <header class="header">
+    <div class="top-bar hidden-xs">
+      <div class="container">
+        <div class="row-line">
+          <div class="column-back">
+            <a href="#" class="top-bar__back">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#fff" d="M6.293 13.707l-5-5c-0.391-0.39-0.391-1.024 0-1.414l5-5c0.391-0.391 1.024-0.391 1.414 0s0.391 1.024 0 1.414l-3.293 3.293h9.586c0.552 0 1 0.448 1 1s-0.448 1-1 1h-9.586l3.293 3.293c0.195 0.195 0.293 0.451 0.293 0.707s-0.098 0.512-0.293 0.707c-0.391 0.391-1.024 0.391-1.414 0z"></path>
+              </svg>
+              <span class="top-bar__welcome">Назад</span>
+            </a>
+          </div>
+          <div class="column row-line row-line__between">
+            <div class="column-left row-line row-line__between">
+              <a href="#" class="top-bar__link">Вы смотрели</a>
+              <a href="#" class="top-bar__link">Контакты</a>
+              <a href="tel:74957600518" class="top-bar__link">(495) 760 05 18</a>
+              <a href="tel:79163639116" class="top-bar__link">(916) 363 91 16</a>
+            </div>
+            <div class="column-right row-line row-line__between">
+              <a href="#" class="top-bar__cart js-manual-popover-autohide" data-toggle="popover" data-content="<b>Добавлено в корзину</b>" data-placement="bottom" data-html="true" data-trigger="manual" data-original-title="" title="">
+                Корзина <span class="js-cart-items-count top-bar__count">0</span>
+              </a>
+              <a href="#" class="top-bar__enter">Вход</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header fixed-top-centered">
     	<div class="container">
-    		<div class="row-line row-line__between">
-    			<a class="social-item social-item--ig" href="https://www.instagram.com/parketlux_v/" target="_blank"></a>
-    			<div class="top-navigation">
-    				<a href="#"><nobr>Фотогалерея</nobr></a>
-    				<a href="#" class="hidden-sm hidden-xs"><nobr>Видеогалерея</nobr></a>
-    				<a href="#"><nobr>Вопрос-ответ</nobr></a>
-    				<a href="#"><nobr>Контакты</nobr></a>
-    			</div>
-    		</div>
     		<div class="row-line">
     			<div class="header-column">
     				<a class="logo" href="#">
-    					<img src="images/logo.svg">
+    					<img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
     				</a>
     				<a class="toggle" href="#"> </a>
     			</div>
@@ -53,13 +125,15 @@
     						каждый день с 9:00 до 21:00
     					</li>
     					<li>
-    						<a href="#" class="link">Связаться с технологом</a>
+    						<a data-fancybox="show_form" data-src="#show_form" href="javascript:;" class="link">Связаться с технологом</a>
     					</li>
     				</ul>
     			</div>
     		</div>
     	</div>
     </header>
+
+
     <main>
     	<section class="section-home-page">
     		<div class="container">
@@ -262,7 +336,7 @@
     	    <div class="row-line">
     	      <div class="full-width">
     	        <article class="article-content">
-    	          <h3>Компания</h3>
+    	          <h3>Компания «Современные Технологии Паркета» паркетные работы в Москве</h3>
     	          <p><em><u>Работаем без предоплаты,&nbsp;официальный&nbsp;договор и гарантия на работы</u></em></p>
     	          <p>Выбирая, с какой компанией работать, вы сравниваете все за и против! Сравниваете оборудование, цены, сроки проведения работ и ещё с десяток факторов. И после этого делаете выбор.</p>
     	          <p>И это правильно!</p>
@@ -284,102 +358,138 @@
     	</section>
 
     </main>
-  </div>
-  <footer class="footer">
-  	<div class="container hidden-md hidden-lg">
-      <div class="row-line row-line__between">
-        <div class="column-mob">
-          <a href="#" class="link-footer">Контакты</a>
-        </div>
-        <div class="column-mob">
-          <a href="#" class="link-footer">Фотогалерея</a>
-          /
-          <a href="#" class="link-footer">Вопрос-ответ</a>
+    <footer class="footer">
+    	<div class="container hidden-md hidden-lg">
+        <div class="row-line row-line__between">
+          <div class="column-mob">
+            <a href="#" class="link-footer">Контакты</a>
+          </div>
+          <div class="column-mob">
+            <a href="#" class="link-footer">Фотогалерея</a>
+            /
+            <a href="#" class="link-footer">Вопрос-ответ</a>
+          </div>
         </div>
       </div>
-    </div>
-  	<div class="container hidden-sm hidden-xs">
-  		<div class="row-line">
-  			<div class="footer-menu">
-  				<h4>Штучный паркет</h4>
-  				<ul class="links">
-  					<li><a href="/articles/shtuchnyy-parket/">Штучный паркет - что это?</a></li>
-  					<li><a href="/ukladka-shtuchnogo-parketa/">Укладка паркета</a></li>
-  					<li><a href="/tsiklevka-parketa/">Шлифовка штучного паркета</a></li>
-  					<li><a href="/tonirovanie-parketa/">Тонирование штучного паркета</a></li>
-  					<li><a href="/articles/shtuchnyy-parket/lak-ili-maslo/">Паркет под лаком или маслом</a></li>
-  					<li><a href="/articles/shtuchnyy-parket/vidy-ukladok/">Варианты укладки паркета</a></li>
-  					<li><a href="/articles/shtuchnyy-parket/porody-dereva/">Породы дерева</a></li>
-  				</ul>
-  			</div>
-  			<div class="footer-menu">
-  				<h4>Массивная доска</h4>
-  				<ul class="links">
-  					<li><a href="/articles/massivnaya-doska/">Массивная доска – 5 параметров выбора!</a></li>
-  					<li><a href="/ukladka-massivnoy-doski/">Укладка массивной доски</a></li>
-  					<li><a href="/tsiklevka-parketa/">Шлифовка массивной доски</a></li>
-  					<li><a href="/articles/massivnaya-doska/lak-ili-maslo-mass/">Массив под лаком или маслом</a></li>
-  					<li><a href="/tonirovanie-parketa/">Тонировка массивной доски</a></li>
-  					<li><a href="/articles/massivnaya-doska/porody-dereva-mass/">Породы древесины массивной доски</a></li>
-  					<li><a href="/ukhod-za-parketom/">Уход за паркетом</a></li>
-  				</ul>
-  			</div>
-  			<div class="footer-menu">
-          <h4>Паркетная доска</h4>
-          <ul class="links">
-            <li><a href="/articles/parketnaya-doska/">Инженерный паркет и паркетная доска - как они есть!</a></li>
-            <li><a href="/ukladka-parketnoy-doski/">Укладка паркетной доски</a></li>
-            <li><a href="/tsiklevka-parketa/">Шлифовка паркетной доски</a></li>
-            <li><a href="/tonirovanie-parketa/">Колеровка паркетной доски</a></li>
-            <li><a href="/articles/parketnaya-doska/lak-ili-maslo-parket/">Лак или масло?</a></li>
-            <li><a href="/articles/parketnaya-doska/porody-dereva-parket/">Паркетная доска - породы дерева</a></li>
-          </ul>
-        </div>
-  			<div class="footer-menu">
-            <h4>Ламинат</h4>
+    	<div class="container hidden-sm hidden-xs">
+    		<div class="row-line">
+    			<div class="footer-menu">
+    				<h4>Штучный паркет</h4>
+    				<ul class="links">
+    					<li><a href="/articles/shtuchnyy-parket/">Штучный паркет - что это?</a></li>
+    					<li><a href="/ukladka-shtuchnogo-parketa/">Укладка паркета</a></li>
+    					<li><a href="/tsiklevka-parketa/">Шлифовка штучного паркета</a></li>
+    					<li><a href="/tonirovanie-parketa/">Тонирование штучного паркета</a></li>
+    					<li><a href="/articles/shtuchnyy-parket/lak-ili-maslo/">Паркет под лаком или маслом</a></li>
+    					<li><a href="/articles/shtuchnyy-parket/vidy-ukladok/">Варианты укладки паркета</a></li>
+    					<li><a href="/articles/shtuchnyy-parket/porody-dereva/">Породы дерева</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+    				<h4>Массивная доска</h4>
+    				<ul class="links">
+    					<li><a href="/articles/massivnaya-doska/">Массивная доска – 5 параметров выбора!</a></li>
+    					<li><a href="/ukladka-massivnoy-doski/">Укладка массивной доски</a></li>
+    					<li><a href="/tsiklevka-parketa/">Шлифовка массивной доски</a></li>
+    					<li><a href="/articles/massivnaya-doska/lak-ili-maslo-mass/">Массив под лаком или маслом</a></li>
+    					<li><a href="/tonirovanie-parketa/">Тонировка массивной доски</a></li>
+    					<li><a href="/articles/massivnaya-doska/porody-dereva-mass/">Породы древесины массивной доски</a></li>
+    					<li><a href="/ukhod-za-parketom/">Уход за паркетом</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+            <h4>Паркетная доска</h4>
             <ul class="links">
-              <li><a href="/articles/laminat/">Ламинат - что это?</a></li>
-              <li><a href="/ukladka-laminata/">Укладка ламината</a></li>
-              <li><a href="/articles/laminat/materialy-dlya-ukladki-laminat/">Материалы для укладки</a></li>
-              <li><a href="/articles/laminat/ukhod-za-laminatom/">Уход за ламинатом</a></li>
+              <li><a href="/articles/parketnaya-doska/">Инженерный паркет и паркетная доска - как они есть!</a></li>
+              <li><a href="/ukladka-parketnoy-doski/">Укладка паркетной доски</a></li>
+              <li><a href="/tsiklevka-parketa/">Шлифовка паркетной доски</a></li>
+              <li><a href="/tonirovanie-parketa/">Колеровка паркетной доски</a></li>
+              <li><a href="/articles/parketnaya-doska/lak-ili-maslo-parket/">Лак или масло?</a></li>
+              <li><a href="/articles/parketnaya-doska/porody-dereva-parket/">Паркетная доска - породы дерева</a></li>
             </ul>
-  			</div>
-  		</div>
-  	</div>
-    <div class="bottom-information">
-      <div class="container">
-        <div class="row-line">
-          <div class="column row-line">
-            <div class="footer__copy">
-                © ООО "СТП" - Паркетные работы в Москве <br>
-                Москва,&nbsp;Протопоповский переулок, дом 19, строение 13&nbsp;<br>
-                Тел. +7 (495) 363-87-99 <br>
-                <a href="#">карта сайта</a>
-            </div>
-            <div class="search-block">
-              <form action="#">
-                <div class="search-field">
-                  <input type="text" name="q" value="" placeholder="Что вы ищете?">
-                  <input name="s" type="submit" value="Поиск">
-                </div>
-              </form>
-            </div>
           </div>
-          <div class="column">
+    			<div class="footer-menu">
+              <h4>Ламинат</h4>
+              <ul class="links">
+                <li><a href="/articles/laminat/">Ламинат - что это?</a></li>
+                <li><a href="/ukladka-laminata/">Укладка ламината</a></li>
+                <li><a href="/articles/laminat/materialy-dlya-ukladki-laminat/">Материалы для укладки</a></li>
+                <li><a href="/articles/laminat/ukhod-za-laminatom/">Уход за ламинатом</a></li>
+              </ul>
+    			</div>
+    		</div>
+    	</div>
+      <div class="bottom-information">
+        <div class="container">
+          <div class="row-line">
+            <div class="column row-line">
+              <div class="footer__copy">
+                  © ООО "СТП" - Паркетные работы в Москве <br>
+                  Москва,&nbsp;Протопоповский переулок, дом 19, строение 13&nbsp;<br>
+                  Тел. +7 (495) 363-87-99 <br>
+                  <a href="#">карта сайта</a>
+              </div>
+              <div class="search-block">
+                <form action="#">
+                  <div class="search-field">
+                    <input type="text" name="q" value="" placeholder="Что вы ищете?">
+                    <input name="s" type="submit" value="Поиск">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="column">
 
+            </div>
           </div>
         </div>
       </div>
+    </footer>
+    <div class="back-to-top" style="display: block;">
+      <div>Вверх ↑</div>
     </div>
-  </footer>
-  <div class="back-to-top" style="display: block;">
-    <div>Вверх ↑</div>
+
+    <div id="show_form" class="modal-call-us">
+      <div class="popup-container">
+        <form class="form-horizontal" role="form" action="/ask/" name="SIMPLE_FORM_1" data-action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="0ecb222d812616a4ac3a134d0974bf54"><input type="hidden" name="WEB_FORM_ID" value="1">    <p>Консультация по телефону:<br><a href="tel:+74953638799">+7(495) 363-87-99</a></p>
+          <h4>Связаться с технологом</h4>
+          <div class="form-group">
+              <input placeholder="Ваше имя" type="text" class="form-control" name="form_text_1" value="" size="0">
+          </div>
+          <div class="form-group">
+              <input placeholder="Электронная почта" type="text" class="form-control" name="form_text_2" value="" size="0">
+          </div>
+          <div class="form-group">
+              <textarea placeholder="Ваш вопрос" name="form_textarea_3" cols="40" rows="5" class="form-control textarea-question"></textarea>
+          </div>
+          <div class="form-group">
+              <input placeholder="Телефон" type="text" class="form-control" name="form_text_9" value="" size="0">
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12 col-xs-12">
+              <div>Введите код с картинки:</div>
+              <input type="hidden" name="captcha_sid" value="047af7500bf02b6073ff7c4c66ba837e">
+              <img src="images/captcha.jpeg" width="180" height="40">
+              <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+              <input type="submit" name="web_form_submit" value="Отправить" class="pull-right btn-blue fixsize">
+              <input type="hidden" name="web_form_apply" value="Y">
+          </div>
+          <div class="form-group result" style="display: none;">
+            <div class="col-xs-12" style="color: green;">
+              Ваше сообщение успешно отправлено
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
   </div>
-
-
   <script src="./js/vendor.js" defer></script>
   <script src="./js/app.js" defer></script>
 
+  </root>
 </body>
-
 </html>

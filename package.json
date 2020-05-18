@@ -61,9 +61,11 @@
     "fix-js": "gulp fix-js"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "include-media": "1.4.9",
     "jquery": "^3.5.1",
     "normalize.css": "8.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "slideout": "^1.0.1"
   }
 }

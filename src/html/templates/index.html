@@ -4,15 +4,17 @@
 @@include('../partials/head/head.html')
 
 <body>
+  <root>
+  @@include('../partials/components/nav-menu.html')
   <div class="wrapper gtk_main slideout-panel">
+    @@include('../partials/components/top-header.html')
     @@include('../partials/components/header.html')
     <main>
     	@@include('../partials/frontpage/content.html')
     </main>
+    @@include('../partials/components/footer.html')
   </div>
-  @@include('../partials/components/footer.html')
-
   @@include('../partials/scripts/common.html')
+  </root>
 </body>
-
 </html>

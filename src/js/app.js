@@ -5,11 +5,13 @@
 
 import slider from './modules/slider-home';
 import backToTop from './modules/backToTop';
+import navMenu from './modules/navMenu';
 
 (($) => {
   // When DOM is ready
   $(() => {
     slider.init();
     backToTop.init();
+    navMenu.init();
   });
 })(jQuery);

@@ -1,11 +1,18 @@
 .header {
-	height: 180px;
+	height: 150px;
 	padding: 10px 0 0;
 	position: relative;
   @media (max-width: 991px) {
     height: auto;
     padding-bottom: 17px;
   }
+
+  &.fixed-top-centered {
+    position: relative;
+    display: block;
+    margin: 26px auto 0;
+  }
+
 	.header-column {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -50,19 +57,19 @@
 			}
 		}
 	}
+}
 
-	.toggle {
-	    width: 34px;
-	    height: 17px;
-	    background: url(../images/toggle.svg) bottom left no-repeat;
-	    border: 0;
-	    float: left;
-	    display: block;
-	    padding-top: 53px;
-	    z-index: 2;
-    	position: relative;
-    	@media (max-width: 400px) {
-    		padding-top: 45px;
-    	}
-	}
+.toggle {
+  width: 34px;
+  height: 17px;
+  background: url(../images/toggle.svg) bottom left no-repeat;
+  border: 0;
+  float: left;
+  display: block;
+  padding-top: 53px;
+  z-index: 2;
+  position: relative;
+  @media (max-width: 400px) {
+    padding-top: 45px;
+  }
 }

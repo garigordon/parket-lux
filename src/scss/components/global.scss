@@ -3,6 +3,11 @@ body {
 	background-attachment: fixed;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .container {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -61,6 +66,14 @@ body {
 	margin: 0 0 20px;
 }
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
 h2, h3 {
     font-size: 22px;
     font-weight: bold;
@@ -81,4 +94,21 @@ a {
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+.wrapper {
+  background: url(../images/bg.png) repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+root {
+  display: block;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
