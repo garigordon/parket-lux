@@ -1,7 +1,10 @@
 .footer {
   background-color: #294886;
   .container {
-    padding: 50px 115px 15px;
+    padding: 20px 15px;
+    @media (min-width: 768px) {
+      padding: 50px 115px 15px;
+    }
   }
 
   .search-block {
@@ -23,7 +26,7 @@
     }
 
     input[type=submit] {
-      background-color: #4f7fd6;
+      background: #4f7fd6;
       color: #fff;
       font-family: 'Roboto', Arial, sans-serif;
       font-size: 14px;
@@ -73,7 +76,93 @@
   }
 
   .column {
-    width: 33.33%;
+    width: 100%;
     padding: 0 15px;
+    @media (min-width: 768px) {
+      width: 33.33%;
+      text-align: center;
+    }
+  }
+
+  .footer-menu {
+    @extend %listreset;
+    li {
+      line-height: 26px;
+      a {
+        color: #ccc;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      .fa-shopping-cart {
+        font-size: 12px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .footer-address {
+    @extend %listreset;
+    margin: 0 0 0 20px;
+    li {
+      position: relative;
+      line-height: 26px;
+      a {
+        color: #ccc;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .fa {
+        position: absolute;
+        left: -18px;
+        top: 7px;
+      }
+    }
+  }
+
+  .fa {
+    margin-right: 15px;
+    color: #dd522d;
+    font-size: 15px;
+  }
+
+  .footer-info-site {
+    &__text {
+      text-align: center;
+      color: #ccc;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .credit-cards {
+    max-width: 270px;
+    margin: 20px auto 5px;
+    img {
+      display: inline-block;
+      margin: 0 4px;
+    }
+  }
+}
+
+.footer-copy {
+  height: 50px;
+  line-height: 50px;
+  background-color: #222;
+  text-align: center;
+  p {
+    color: #aaa;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
   }
 }

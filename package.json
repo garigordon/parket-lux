@@ -62,6 +62,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "font-awesome": "^4.7.0",
     "include-media": "1.4.9",
     "jquery": "^3.5.1",
     "normalize.css": "8.0.1",
