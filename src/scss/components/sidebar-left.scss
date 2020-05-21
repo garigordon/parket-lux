@@ -1,0 +1,18 @@
+.sidebar-left {
+  flex: 270px 0;
+  z-index: 22;
+  position: relative;
+  vertical-align: top;
+  will-change: min-height;
+  .title {
+    h3 {
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+    }
+    &--orange {
+      h3 {
+        color: #dd522d;
+      }
+    }
+  }
+}

@@ -78,6 +78,8 @@
   .column {
     width: 100%;
     padding: 0 15px;
+    margin: 0 0 20px;
+    text-align: center;
     @media (min-width: 768px) {
       width: 33.33%;
       text-align: center;
@@ -115,9 +117,11 @@
         text-decoration: none;
       }
       .fa {
-        position: absolute;
-        left: -18px;
-        top: 7px;
+        @media (min-width: 768px) {
+          position: absolute;
+          left: -18px;
+          top: 7px;
+        }
       }
     }
   }
