@@ -50,3 +50,20 @@ input[type='submit'] {
   cursor: pointer;
   font-family: var(--form-font-family);
 }
+
+select {
+  -webkit-appearance: none;
+  height: 28px;
+  background-color: #fff;
+  border: 1px solid #f7f1e9;
+  font-family: robotolight, Arial, sans-serif;
+  color: #000;
+  font-size: 12px;
+  padding: 0 24px 0 14px;
+  cursor: pointer;
+  margin: 0 10px 0 5px;
+  border-radius: 0;
+  background: #fff url(../images/arrow-select.png) no-repeat;
+  background-position-x: calc(100% - 8px);
+  background-position-y: center;
+}
