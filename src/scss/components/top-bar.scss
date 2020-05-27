@@ -1,5 +1,5 @@
 .top-bar {
-  background: #cfcfcf;
+  background: #364657;
   padding: 5px 10px;
   max-width: 1200px;
   overflow: visible;
@@ -32,7 +32,6 @@
   }
 
   .column-right {
-    padding: 0 15px;
     @media (min-width: 992px) {
       width: 25%;
     }
@@ -41,13 +40,19 @@
   &__enter,
   &__link {
     font-family: Roboto,sans-serif;
-    color: #294886;
+    color: #fff;
     font-size: 12px;
     text-decoration: none;
   }
 
+  &__enter {
+    padding: 0 0 0 26px;
+    background: url(../images/header_top_login.svg) no-repeat left 50%;
+    background-size: 23px 14px;
+  }
+
   &__cart {
-    color: #294886;
+    color: #fff;
     padding: 0 0 0 25px;
     background: url(../images/header_top_cart.svg) no-repeat left 50%;
     text-decoration: none;
@@ -59,7 +64,7 @@
     background: #ff5100;
     border-radius: 10px;
     display: inline-block;
-    color: #294886;
+    color: #fff;
     font-size: 10px;
     padding: 3px 4px;
     height: 16px;
@@ -70,7 +75,7 @@
 
   &__welcome {
     padding: 0 0 0 6px;
-    color: #294886;
+    color: #fff;
     font-size: 12px;
     margin: 4px 0 0;
     display: inline-block;
