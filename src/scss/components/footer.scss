@@ -90,6 +90,7 @@
     @extend %listreset;
     li {
       line-height: 26px;
+      text-align: left;
       a {
         color: #ccc;
         font-family: 'Roboto', Arial, sans-serif;
@@ -110,6 +111,7 @@
     li {
       position: relative;
       line-height: 26px;
+      text-align: left;
       a {
         color: #ccc;
         font-family: 'Roboto', Arial, sans-serif;
@@ -168,5 +170,37 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0;
+  }
+}
+
+.footer-top {
+  margin: 0 0 20px;
+  .column-mobile {
+    padding: 0 15px;
+  }
+  .column {
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  h4 {
+    color: #0068c8;
+    font-weight: bold;
+    padding: 0 0 10px;
+  }
+
+  .menu-list-links {
+    @extend %listreset;
+    li {
+      padding: 2px 0;
+      a {
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          text-decoration: underline;
+          color: #0068c8;
+        }
+      }
+    }
   }
 }

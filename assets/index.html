@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Starter Kit</title>
-  <link media="all" rel="stylesheet" href="./css/vendor.min.css">
-  <link media="all" rel="stylesheet" href="./css/styles.min.css">
+  <link media="all" rel="stylesheet" href="./css/vendor.css">
+  <link media="all" rel="stylesheet" href="./css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700%7COpen+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -137,12 +137,8 @@
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Задайте вопрос</a></li>
             <li><a href="#">Производители</a></li>
-            <li>
-              <a href="#">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                Ваша корзина <div class="menu-cart-count" id="menu_cart_items_count">0</div>
-              </a>
-            </li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Фото</a></li>
           </ul>
         </div>
 
@@ -374,6 +370,62 @@
     	</section>
 
     </main>
+    <footer class="footer-top">
+      <div class="container hidden-md hidden-lg">
+        <div class="row-line row-line__between">
+              <div class="column-mobile"><a href="/contacts/">Контакты</a></div>
+              <div class="column-mobile"><a href="/photos/">Фотогалерея</a> / <a href="/faq/">Вопрос-ответ</a></div>
+        </div>
+      </div>
+      <div class="container hidden-sm hidden-xs">
+        <div class="row-line">
+          <div class="column">
+            <h4>Штучный паркет</h4>
+            <ul class="menu-list-links">
+              <li><a href="/articles/shtuchnyy-parket/">Штучный паркет - что это?</a></li>
+              <li><a href="/ukladka-shtuchnogo-parketa/">Укладка паркета</a></li>
+              <li><a href="/tsiklevka-parketa/">Шлифовка штучного паркета</a></li>
+              <li><a href="/tonirovanie-parketa/">Тонирование штучного паркета</a></li>
+              <li><a href="/articles/shtuchnyy-parket/lak-ili-maslo/">Паркет под лаком или маслом</a></li>
+              <li><a href="/articles/shtuchnyy-parket/vidy-ukladok/">Варианты укладки паркета</a></li>
+              <li><a href="/articles/shtuchnyy-parket/porody-dereva/">Породы дерева</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Массивная доска</h4>
+            <ul class="menu-list-links">
+              <li><a href="/articles/massivnaya-doska/">Массивная доска – 5 параметров выбора!</a></li>
+              <li><a href="/ukladka-massivnoy-doski/">Укладка массивной доски</a></li>
+              <li><a href="/tsiklevka-parketa/">Шлифовка массивной доски</a></li>
+              <li><a href="/articles/massivnaya-doska/lak-ili-maslo-mass/">Массив под лаком или маслом</a></li>
+              <li><a href="/tonirovanie-parketa/">Тонировка массивной доски</a></li>
+              <li><a href="/articles/massivnaya-doska/porody-dereva-mass/">Породы древесины массивной доски</a></li>
+              <li><a href="/ukhod-za-parketom/">Уход за паркетом</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Паркетная доска</h4>
+            <ul class="menu-list-links">
+              <li><a href="/articles/parketnaya-doska/">Инженерный паркет и паркетная доска - как они есть!</a></li>
+              <li><a href="/ukladka-parketnoy-doski/">Укладка паркетной доски</a></li>
+              <li><a href="/tsiklevka-parketa/">Шлифовка паркетной доски</a></li>
+              <li><a href="/tonirovanie-parketa/">Колеровка паркетной доски</a></li>
+              <li><a href="/articles/parketnaya-doska/lak-ili-maslo-parket/">Лак или масло?</a></li>
+              <li><a href="/articles/parketnaya-doska/porody-dereva-parket/">Паркетная доска - породы дерева</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Ламинат</h4>
+            <ul class="menu-list-links">
+              <li><a href="/articles/laminat/">Ламинат - что это?</a></li>
+              <li><a href="/ukladka-laminata/">Укладка ламината</a></li>
+              <li><a href="/articles/laminat/materialy-dlya-ukladki-laminat/">Материалы для укладки</a></li>
+              <li><a href="/articles/laminat/ukhod-za-laminatom/">Уход за ламинатом</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <footer class="footer">
     	<div class="container">
         <div class="search-block">
@@ -420,19 +472,20 @@
                 </li>
                 <li>
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <a href="tel:+74957600518">+7 (495) 760-05-18</a></li>
+                  <a href="tel:+74953638799">+7 (495) 363 87 99</a>
+                </li>
                 <li>
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <a href="tel:+79163639116">+7 (916)  363-91-16 консультация</a>
+                  <a href="tel:+79153639363">+7 (915) 363 9 363 консультация</a>
                 </li>
                 <li>
                   <i class="fa fa-at" aria-hidden="true"></i>
-                  <a href="mailto:market-parket@mail.ru">market-parket@mail.ru</a></li>
+                  <a href="mailto:parket-lux@mail.ru">parket-lux@mail.ru</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-info-site">
-          <p class="footer-info-site__text">Данный сайт носит информационный характер и не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации обращайтесь к менеджерам через форму «контакты» или по телефону: <a href="tel:+74957600518">+7(495) 760-05-18</a>.</p>
+          <p class="footer-info-site__text">Данный сайт носит информационный характер и не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации обращайтесь к менеджерам через форму «контакты» или по телефону: <a href="tel:+74953638799">+7 (495) 363 87 99</a>.</p>
         </div>
         <div class="credit-cards">
           <img src="images/Visa.png" width="55" height="34">
@@ -453,7 +506,9 @@
 
     <div id="show_form" class="modal-call-us">
       <div class="popup-container">
-        <form class="form-horizontal" role="form" action="/ask/" name="SIMPLE_FORM_1" data-action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="0ecb222d812616a4ac3a134d0974bf54"><input type="hidden" name="WEB_FORM_ID" value="1">    <p>Консультация по телефону:<br><a href="tel:+74953638799">+7(495) 363-87-99</a></p>
+        <form class="form-horizontal" role="form" action="/ask/" name="SIMPLE_FORM_1" data-action="/" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="sessid" id="sessid" value="0ecb222d812616a4ac3a134d0974bf54"><input type="hidden" name="WEB_FORM_ID" value="1">
+          <p>Консультация по телефону:<br><a href="tel:+74953638799">+7(495) 363-87-99</a></p>
           <h4>Связаться с технологом</h4>
           <div class="form-group">
               <input placeholder="Ваше имя" type="text" class="form-control" name="form_text_1" value="" size="0">
@@ -489,8 +544,8 @@
     </div>
 
   </div>
-  <script src="./js/vendor.min.js" defer></script>
-  <script src="./js/app.min.js" defer></script>
+  <script src="./js/vendor.js" defer></script>
+  <script src="./js/app.js" defer></script>
 
   </root>
 </body>
