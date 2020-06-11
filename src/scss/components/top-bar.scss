@@ -96,4 +96,40 @@
       float: left;
     }
   }
+  &.mobile-version {
+    display: none;
+    .mob-tel-num {
+      color: #fff;
+    }
+    .mob-visible {
+      flex: 1 1;
+      display: flex;
+      text-align: center;
+      a {
+        width: 33.33%;
+      }
+    }
+    .row-line {
+      justify-content: space-between;
+    }
+    a {
+      color: #fff;
+    }
+
+    .goods-count {
+      min-width: 24px;
+      height: 17px;
+      padding: 0 5px;
+      line-height: 17px;
+      vertical-align: middle;
+      color: #fff;
+      font-family: robotoregular, Arial, sans-serif;
+      font-size: 12px;
+      background-color: #dd522d;
+      border-radius: 15px;
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  }
 }

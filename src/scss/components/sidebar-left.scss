@@ -4,6 +4,9 @@
   position: relative;
   vertical-align: top;
   will-change: min-height;
+  @media screen and (max-width: 875px) {
+    display: none;
+  }
   .title {
     h3 {
       font-size: 15px;

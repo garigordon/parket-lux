@@ -6,6 +6,7 @@
 import slider from './modules/slider-home';
 import backToTop from './modules/backToTop';
 import navMenu from './modules/navMenu';
+import filterMobile from './modules/filterMobile';
 
 (($) => {
   // When DOM is ready
@@ -13,5 +14,6 @@ import navMenu from './modules/navMenu';
     slider.init();
     backToTop.init();
     navMenu.init();
+    filterMobile.init();
   });
 })(jQuery);

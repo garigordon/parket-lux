@@ -3,6 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   flex: 1 1;
+  @media (max-width: 767px) {
+    width: 100%;
+    flex: auto;
+  }
   &__button {
     width: 28px;
     height: 28px;

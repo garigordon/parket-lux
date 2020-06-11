@@ -1,4 +1,8 @@
 .catalog {
+  flex: 1 1;
+  @media (min-width: 768px) {
+    padding: 0 10px;
+  }
   &__post {
     position: relative;
     background-color: #fff;
@@ -16,6 +20,11 @@
     width: 226px;
     background-color: #f9f9f9;
     padding: 10px 15px 25px;
+    @media (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+      margin: 0 0 0 10px;
+    }
   }
 
   .column-text {

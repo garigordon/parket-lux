@@ -13,10 +13,21 @@
 
   .column {
     flex: 1 1;
+    @media (max-width: 767px) {
+      width: 100%;
+      flex: auto;
+      justify-content: center;
+      text-align: center;
+      margin: 0 0 15px;
+    }
     &:last-child {
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      @media (max-width: 767px) {
+        justify-content: center;
+        margin: 0;
+      }
     }
   }
 

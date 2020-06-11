@@ -4,7 +4,7 @@
   overflow: hidden;
   border: 1px solid #cfcfcf;
   padding-bottom: 10px;
-  @media screen and (max-width: 1167px) and (min-width: 920px) {
+  @media screen and (max-width: 1167px) {
     display: none;
   }
   &__title {

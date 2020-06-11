@@ -12,6 +12,7 @@ var navMenu = (function($) {
 
     var menu_a = jQuery('.gtk_menu a.toggle');
     var main_a = jQuery('.gtk_main a.toggle');
+    var wrapper = jQuery('.wrapper');
 
     main_a.click(function(e){
       e.preventDefault();
