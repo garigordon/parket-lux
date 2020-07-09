@@ -5,12 +5,15 @@
   overflow: visible;
   min-height: 27px;
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   z-index: 223;
   top: 0;
   width: 100%;
+  @media (min-width: 768px) {
+    position: fixed;
+  }
   .column-back {
     padding: 0 15px;
     @media (min-width: 768px) {
@@ -25,10 +28,8 @@
   }
 
   .column-left {
-    padding: 2px 100px 0 0;
-    @media (min-width: 992px) {
-      width: 75%;
-    }
+    padding: 2px 50px 0 0;
+    width: 75%;
   }
 
   .column-right {
@@ -97,6 +98,7 @@
     }
   }
   &.mobile-version {
+    background: none;
     display: none;
     .mob-tel-num {
       color: #fff;
@@ -110,10 +112,11 @@
       }
     }
     .row-line {
-      justify-content: space-between;
+      justify-content: flex-end;
     }
     a {
-      color: #fff;
+      color: #000;
+      margin: 0 0 0 10px;
     }
 
     .goods-count {

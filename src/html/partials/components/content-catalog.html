@@ -8,6 +8,9 @@
   <button class="btn-sort">Сортировать</button>
   <div class="filter-head">
     <div class="column">
+
+    </div>
+    <div class="column">
       <span>Показывать по</span>
       <select>
         <option selected="selected" value="10">10</option>
@@ -18,20 +21,6 @@
       </select>
       <span>1 - 10 из </span>
       <span> 515</span>
-    </div>
-    <div class="column">
-      <span>Сортировка:</span>
-      <select class="filter-head__sort">
-        <option selected="selected" data-href="/catalog/">
-          По умолчанию
-        </option>
-        <option data-href="/catalog/?s=name&amp;d=asc">
-          По названию
-        </option>
-        <option data-href="/catalog/?s=price&amp;d=asc">
-          По цене
-        </option>
-      </select>
     </div>
   </div>
   <div class="catalog__post">
@@ -58,8 +47,14 @@
           350х70х15 мм - 0.98 м²<br>
           280х70х15 мм - 0.784 м²
         </p>
+        <div class="catalog__product-variants">
+          <a href="#" class="catalog__variant-link">
+              <span class="desktop-visible">Варианты этого товара <img src="images/variants-arrow.png" width="20" height="14"></span>
+              <span class="mob-visible">Подробнее</span>
+          </a>
+        </div>
       </div>
-      <div class="column-price-block">
+      <div class="column-price-block hidden-xs">
         <span class="catalog__price-title">Кантри (350х70х15мм):</span>
         <span class="catalog__price">
           663 р
@@ -83,7 +78,7 @@
           <a href="#"><img src="images/catalog-photo.jpg" alt="" class="catalog__image"></a>
         </div>
         <div class="put-off-block">
-          <a href="#" class="put-off-block__link put-off-block__link--active">
+          <a href="#" class="put-off-block__link">
             <i class="fa fa-bookmark" aria-hidden="true"></i>
             Отложить
           </a>
@@ -99,8 +94,14 @@
           350х70х15 мм - 0.98 м²<br>
           280х70х15 мм - 0.784 м²
         </p>
+        <div class="catalog__product-variants">
+          <a href="#" class="catalog__variant-link">
+            <span class="desktop-visible">Варианты этого товара <img src="images/variants-arrow.png" width="20" height="14"></span>
+            <span class="mob-visible">Подробнее</span>
+          </a>
+        </div>
       </div>
-      <div class="column-price-block">
+      <div class="column-price-block hidden-xs">
         <span class="catalog__price-title">Кантри (350х70х15мм):</span>
         <span class="catalog__price">
           663 р
@@ -139,15 +140,21 @@
           350х70х15 мм - 0.98 м²<br>
           280х70х15 мм - 0.784 м²
         </p>
+        <div class="catalog__product-variants">
+          <a href="#" class="catalog__variant-link">
+            <span class="desktop-visible">Варианты этого товара <img src="images/variants-arrow.png" width="20" height="14"></span>
+            <span class="mob-visible">Подробнее</span>
+          </a>
+        </div>
       </div>
-      <div class="column-price-block">
+      <div class="column-price-block hidden-xs">
         <span class="catalog__price-title">Кантри (350х70х15мм):</span>
         <span class="catalog__price">
           663 р
           <span class="gray-color"> / 1м²</span>
         </span>
         <span class="catalog__status catalog__status--available">Есть в наличии</span>
-        <button class="catalog__addToCard catalog__addToCard--order">Купить</button>
+        <button class="catalog__addToCard catalog__addToCard--order">На заказ</button>
         <div class="price-bottom">
           <div class="price-bottom__text">Цена за 1000г (расход на 1м²)</div>
           <div class="price-bottom__currency">EUR4.33</div>

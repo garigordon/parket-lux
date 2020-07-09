@@ -1,8 +1,8 @@
 // This is the main with imports from components folder.
 
 @import 'global',
-        'top-bar',
         'header',
+        'top-bar',
         'top-navigation',
         'social-item',
         'contacts-list',
@@ -28,4 +28,5 @@
         'filter-form',
         'btn-sort',
         'filter-mobile',
+        'breadcrumbs',
         'content';

@@ -7,13 +7,21 @@ import slider from './modules/slider-home';
 import backToTop from './modules/backToTop';
 import navMenu from './modules/navMenu';
 import filterMobile from './modules/filterMobile';
+import stickyHeader from './modules/stickyHeader';
+import sidebarMenu from './modules/sidebarMenu';
+import accordionMob from './modules/accordionMob';
+import slimScroll from './modules/slimScroll';
 
 (($) => {
   // When DOM is ready
   $(() => {
+    stickyHeader.init();
     slider.init();
     backToTop.init();
     navMenu.init();
     filterMobile.init();
+    sidebarMenu.init();
+    accordionMob.init();
+    slimScroll.init();
   });
 })(jQuery);

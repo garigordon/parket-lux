@@ -13,12 +13,6 @@ body {
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	@media (min-width: 768px) {
-		width: 750px;
-	}
-	@media (min-width: 992px) {
-		width: 970px;
-	}
 	@media (min-width: 1200px) {
 		width: 1170px;
 	}
@@ -148,4 +142,16 @@ input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.desktop-visible {
+  @media (max-width: 850px) {
+    display: none !important;
+  }
+}
+
+.mob-visible {
+  @media (min-width: 850px) {
+    display: none;
+  }
 }

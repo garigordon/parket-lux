@@ -7,59 +7,311 @@
   <title>Web Starter Kit</title>
   <link media="all" rel="stylesheet" href="./css/vendor.css">
   <link media="all" rel="stylesheet" href="./css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700%7COpen+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
   <root>
-  <div class="gtk_menu slideout-menu">
-    <div class="header-column">
-      <div class="row-line row-line__between">
-        <a href="#" class="logo">
-          <img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
-        </a>
-        <a class="toggle opened" href="#"> </a>
+  <div class="gtk_menu slideout-menu menu_main">
+    <div class="mb-body-left">
+      <div class="header-column">
+        <div class="row-line row-line__between">
+          <a href="#" class="logo">
+            <img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
+          </a>
+          <a class="toggle opened" href="#"> </a>
+        </div>
+        <div class="search-block">
+          <form action="#">
+            <div class="search-field">
+              <input type="text" name="q" value="" placeholder="Что вы ищете?">
+              <input name="s" type="submit" value="">
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="search-block">
-        <form action="#">
-          <div class="search-field">
-            <input type="text" name="q" value="" placeholder="Что вы ищете?">
-            <input name="s" type="submit" value="">
+      <div class="sidebar-catalog accordion fltr">
+          <div class="sidebar-catalog__header-line">
+            <span><i class="fa fa-bars" aria-hidden="true"></i>Паркетные работы</span>
           </div>
-        </form>
+          <div class="pure-menu-list">
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Укладка паркета</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Укладка штучного паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Укладка массивной доски</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Укладка паркетной доски</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Плинтус и порожки</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Укладка ламината</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Восстановление паркета</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Циклевка паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Ремонт паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Уход за паркетом</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Тонировка паркета</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">ПаркETная химия</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Паркетное оборудование</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Подготовка основания</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Пол на лагах</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Сухая стяжка Кнауф</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Стяжка пола</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-catalog__header-line">
+            <span><i class="fa fa-bars" aria-hidden="true"></i>Каталог товаров</span>
+          </div>
+          <div class="pure-menu-list">
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Паркет</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Штучный паркет</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Массивная доска</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Ламинат</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Инженерная доска</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Модульный паркет</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Индустриальный паркет</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Паркетный клей</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Водный клей</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Клей на растворителях</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Полиуретановый клей</a>
+                  <ul class="submenu">
+                    <li><a href="#">Двухкомпонентный клей</a></li>
+                    <li><a href="#">Силановый клей</a></li>
+                    <li><a href="#">Клей на MS-полимерах</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Грунтовка</a>
+                  <ul class="submenu">
+                    <li><a href="#">Водная грунтовка</a></li>
+                    <li><a href="#">Полиуретановая грунтовка</a></li>
+                    <li><a href="#">Эпоксидная грунтовка</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Паркетный лак</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Лак водный</a>
+                  <ul class="submenu">
+                    <li><a href="#">Лак акриловый</a></li>
+                    <li><a href="#">Лак уретан-акриловый</a></li>
+                    <li><a href="#">Лак полиуретановый</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Лак-грунтовка</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Лак кислотный</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Лак уретан-алкидный</a>
+                  <ul class="submenu">
+                    <li><a href="#">Грунтовка водная</a></li>
+                    <li><a href="#">Грунтовка на  растворителях</a></li>
+                    <li><a href="#">Грунтовка маслянная</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Тонирующие составы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Паркетное масло</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Масло 1-компонентное</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Масло 2-компонентное</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Масло с твердым воском</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Цветное масло</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Шпаклевка</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Шпаклевка водная</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Шпаклевка на растворителях</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Средства по уходу</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Уход за лаком</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Уход за маслом</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Уход за террасной доской</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Уход за каменным полом</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Уход за коврами</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Уход за ламинатом, линолеумом, винилом</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Основание пола</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Ремонтные смеси</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Наливные полы</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Грунтовочные составы</a>
+                  <ul class="submenu">
+                    <li><a href="#">Водно-дисперсионный грунт</a></li>
+                    <li><a href="#">Полиуретановый грунт</a></li>
+                    <li><a href="#">Эпоксидный грунт</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Фанера и лаги</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Оборудование</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Циклевочные машины</a>
+                  <ul class="submenu">
+                    <li><a href="#">Шлифовальные машины</a></li>
+                    <li><a href="#">Запчасти шлифмашин</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Абразив</a>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Инструмент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pure-menu-item pure-menu-has-children accordion-item">
+              <a href="#" class="pure-menu-link">Сопутствующие товары</a>
+            </div>
+            <div class="data">
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Плинтус</a>
+                  <ul class="submenu">
+                    <li><a href="#">Металлический плинтус</a></li>
+                    <li><a href="#">Пластиковый плинтус</a></li>
+                    <li><a href="#">Деревянный плинтус</a></li>
+                  </ul>
+                </li>
+                <li class="pure-menu-item">
+                  <a href="#" class="pure-menu-link">Порожки</a>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
-      <nav class="nav-menu">
-        <p>Укладка паркета</p>
-        <ul>
-          <li><a href="#">Укладка штучного паркета</a></li>
-          <li><a href="#">Укладка массивной доски</a></li>
-          <li><a href="#">Укладка паркетной доски</a></li>
-          <li><a href="#">Укладка ламината</a></li>
-          <li><a href="#">Плинтус и порожки</a></li>
-        </ul>
-      </nav>
-      <nav class="nav-menu">
-        <p>Восстановление паркета</p>
-        <ul>
-          <li><a href="#">Циклевка паркета</a></li>
-          <li><a href="#">Ремонт паркета</a></li>
-          <li><a href="#">Уход за паркетом</a></li>
-          <li><a href="#">Тонировка паркета</a></li>
-          <li><a href="#">Паркетная химия</a></li>
-          <li><a href="#">Паркетное оборудование</a></li>
-        </ul>
-      </nav>
-      <nav class="nav-menu">
-        <p>Подготовка основания</p>
-        <ul>
-          <li><a href="#">Стяжка пола</a></li>
-          <li><a href="#">Пол на лагах</a></li>
-          <li><a href="#">Сухая стяжка Кнауф</a></li>
-        </ul>
-      </nav>
     </div>
   </div>
 
@@ -95,73 +347,78 @@
     <div class="top-bar mobile-version visible-xs">
       <div class="container">
         <div class="row-line">
-          <a href="/personal/cart/" class="header_cart">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <span class="goods-count" id="cart_items_count">0</span>
-          </a>
-          <div class="mob-visible">
-            <a href="/howto">как купить</a>
-            <a href="#viewed-products" class="#">вы смотрели</a>
-            <a href="/contacts">контакты</a>
-          </div>
-          <a class="mob-tel-num" href="tel:+74957600518"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          <a href="#" class="mobile-version__link">Видео</a>
+          <a href="#" class="mobile-version__link">Фото</a>
+          <a href="#" class="mobile-version__link">Вопрос ответ</a>
+          <a href="#" class="mobile-version__link">Контакты</a>
         </div>
       </div>
     </div>
 
-    <header class="header fixed-top-centered">
-    	<div class="container">
-    		<div class="row-line">
-    			<div class="header-column">
-    				<a class="logo" href="#">
-    					<img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
-    				</a>
-    				<a class="toggle" href="#"> </a>
-    			</div>
-    			<div class="header-search-block hidden-sm hidden-xs">
-    				<div class="search-block">
-    					<form action="#">
-    						<div class="search-field">
-    							<input type="text" id="sfrm" name="q" value="" placeholder="Что вы ищете?">
-    							<input name="s" type="submit" value="Поиск">
-    						</div>
-    					</form>
-    					<div class="suggestion">Например: <a id="ssugg">Ремонт паркета</a></div>
-    				</div>
-    			</div>
-    			<div class="contacts-column">
-    				<ul class="contacts-list">
-    					<li>
-    						<a class="phone" href="tel:+74953638799">+7 (495) 363 87 99</a>
-    					</li>
-    					<li>
-    						 <a class="phone" href="tel:+79153639363">+7 (915) 363 9 363</a>
-    					</li>
-    					<li class="text">
-    						каждый день с 9:00 до 21:00
-    					</li>
-    					<li>
-    						<a data-fancybox="show_form" data-src="#show_form" href="javascript:;" class="link">Связаться с технологом</a>
-    					</li>
-    				</ul>
-    			</div>
-    		</div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Как купить</a></li>
-            <li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Задайте вопрос</a></li>
-            <li><a href="#">Производители</a></li>
-            <li><a href="#">Видео</a></li>
-            <li><a href="#">Фото</a></li>
-          </ul>
-        </div>
+    <div class="header-sticky">
+      <header class="header fixed-top-centered">
+      	<div class="container">
+      		<div class="row-line">
+      			<div class="header-column">
+      				<a class="logo" href="#">
+      					<img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
+      				</a>
+      				<a class="toggle another-page" href="#"> </a>
+      			</div>
+      			<div class="header-search-block hidden-sm hidden-xs">
+      				<div class="search-block">
+      					<form action="#">
+      						<div class="search-field">
+      							<input type="text" id="sfrm" name="q" value="" placeholder="Что вы ищете?">
+      							<input name="s" type="submit" value="Поиск">
+      						</div>
+      					</form>
+      					<div class="suggestion">Например: <a id="ssugg">Ремонт паркета</a></div>
+      				</div>
+      			</div>
+            <div class="header__icon-mobile">
+              <a href="#" class="basket js-manual-popover-autohide" data-toggle="popover" data-content="<b>Добавлено в корзину</b>" data-placement="bottom" data-html="true" data-trigger="manual" data-original-title="" title="">
+                <img src="images/cart.svg" alt="" title="">
+                <span class="count js-cart-items-count cart-items-count">0</span>
+              </a>
+              <a href="tel:+74957600518" class="phone-icon">
+                <img src="images/phone.svg" alt="" title="">
+              </a>
+            </div>
+      			<div class="contacts-column">
+      				<ul class="contacts-list">
+      					<li>
+      						<a class="phone" href="tel:+74953638799">+7 (495) 363 87 99</a>
+      					</li>
+      					<li>
+      						 <a class="phone" href="tel:+79153639363">+7 (915) 363 9 363</a>
+      					</li>
+      					<li class="text">
+      						каждый день с 9:00 до 21:00
+      					</li>
+      					<li>
+      						<a data-fancybox="show_form" data-src="#show_form" href="javascript:;" class="link">Связаться с технологом</a>
+      					</li>
+      				</ul>
+      			</div>
+      		</div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Как купить</a></li>
+              <li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Задайте вопрос</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Фото</a></li>
+            </ul>
+          </div>
 
-    	</div>
-    </header>
+      	</div>
+      </header>
 
 
+    </div>
     <main>
     	<section class="section-home-page">
     		<div class="container">
