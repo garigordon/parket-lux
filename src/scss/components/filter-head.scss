@@ -34,4 +34,32 @@
   &__sort {
     margin: 0 0 0 15px;
   }
+
+  &__link {
+    font-size: 12px;
+    color: #333;
+    margin: 0 3px;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__active {
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 3px;
+  }
+
+  &__icon {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    margin: 0 3px;
+    vertical-align: bottom;
+  }
 }
