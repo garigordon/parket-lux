@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Starter Kit</title>
-  <link media="all" rel="stylesheet" href="./css/vendor.min.css">
-  <link media="all" rel="stylesheet" href="./css/styles.min.css">
+  <link media="all" rel="stylesheet" href="./css/vendor.css">
+  <link media="all" rel="stylesheet" href="./css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700%7COpen+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
 </head>
@@ -357,51 +357,42 @@
 
     <div class="header-sticky">
       <header class="header fixed-top-centered">
-      	<div class="container">
-      		<div class="row-line">
-      			<div class="header-column">
-      				<a class="logo" href="#">
-      					<img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
-      				</a>
-      				<a class="toggle another-page" href="#"> </a>
-      			</div>
-      			<div class="header-search-block hidden-sm hidden-xs">
-      				<div class="search-block">
-      					<form action="#">
-      						<div class="search-field">
-      							<input type="text" id="sfrm" name="q" value="" placeholder="Что вы ищете?">
-      							<input name="s" type="submit" value="Поиск">
-      						</div>
-      					</form>
-      					<div class="suggestion">Например: <a id="ssugg">Ремонт паркета</a></div>
-      				</div>
-      			</div>
-            <div class="header__icon-mobile">
-              <a href="#" class="basket js-manual-popover-autohide" data-toggle="popover" data-content="<b>Добавлено в корзину</b>" data-placement="bottom" data-html="true" data-trigger="manual" data-original-title="" title="">
-                <img src="images/cart.svg" alt="" title="">
-                <span class="count js-cart-items-count cart-items-count">0</span>
+        <div class="container">
+          <div class="row-line">
+            <div class="header-column">
+              <a class="logo" href="#">
+                <img alt="Parket Lux" title="Parket Lux" src="images/logo.svg">
               </a>
-              <a href="tel:+74957600518" class="phone-icon">
-                <img src="images/phone.svg" alt="" title="">
-              </a>
+              <a class="toggle" href="#"> </a>
             </div>
-      			<div class="contacts-column">
-      				<ul class="contacts-list">
-      					<li>
-      						<a class="phone" href="tel:+74953638799">+7 (495) 363 87 99</a>
-      					</li>
-      					<li>
-      						 <a class="phone" href="tel:+79153639363">+7 (915) 363 9 363</a>
-      					</li>
-      					<li class="text">
-      						каждый день с 9:00 до 21:00
-      					</li>
-      					<li>
-      						<a data-fancybox="show_form" data-src="#show_form" href="javascript:;" class="link">Связаться с технологом</a>
-      					</li>
-      				</ul>
-      			</div>
-      		</div>
+            <div class="header-search-block hidden-sm hidden-xs">
+              <div class="search-block">
+                <form action="#">
+                  <div class="search-field">
+                    <input type="text" id="sfrm" name="q" value="" placeholder="Что вы ищете?">
+                    <input name="s" type="submit" value="Поиск">
+                  </div>
+                </form>
+                <div class="suggestion">Например: <a id="ssugg">Ремонт паркета</a></div>
+              </div>
+            </div>
+            <div class="contacts-column">
+              <ul class="contacts-list">
+                <li>
+                  <a class="phone" href="tel:+74953638799">+7 (495) 363 87 99</a>
+                </li>
+                <li>
+                  <a class="phone" href="tel:+79153639363">+7 (915) 363 9 363</a>
+                </li>
+                <li class="text">
+                  каждый день с 9:00 до 21:00
+                </li>
+                <li>
+                  <a data-fancybox="show_form" data-src="#show_form" href="javascript:;" class="link">Связаться с технологом</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="menu">
             <ul>
               <li><a href="#">Как купить</a></li>
@@ -414,7 +405,7 @@
             </ul>
           </div>
 
-      	</div>
+        </div>
       </header>
 
 
@@ -817,8 +808,8 @@
     </div>
 
   </div>
-  <script src="./js/vendor.min.js" defer></script>
-  <script src="./js/app.min.js" defer></script>
+  <script src="./js/vendor.js" defer></script>
+  <script src="./js/app.js" defer></script>
 
   </root>
 </body>

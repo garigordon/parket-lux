@@ -308,14 +308,78 @@
           </li>
         </ul>
       </div>
-      <div class="sidebar-payment">
-        <div class="sidebar-payment__title">Любые способы оплаты</div>
-        <div class="row-line row-line__between">
-          <div class="sidebar-payment__column"><img src="images/wallet.png" alt=""></div>
-          <div class="sidebar-payment__column"><img src="images/credit-cards.png" alt=""></div>
-          <div class="sidebar-payment__column"><img src="images/bank.png" alt=""></div>
+      <!--<div class="sidebar-payment">-->
+        <!--<div class="sidebar-payment__title">Любые способы оплаты</div>-->
+        <!--<div class="row-line row-line__between">-->
+          <!--<div class="sidebar-payment__column"><img src="images/wallet.png" alt=""></div>-->
+          <!--<div class="sidebar-payment__column"><img src="images/credit-cards.png" alt=""></div>-->
+          <!--<div class="sidebar-payment__column"><img src="images/bank.png" alt=""></div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="sidebar-basket-block">
+        <div class="sidebar-basket-block__title"><a href="#">Ваша корзина</a></div>
+        <div class="sidebar-basket-block__body">
+          <form id="basket-form" method="post" action="">
+            <div class="sidebar-basket-block__cartitem">
+              <h4><a href="#">Лак Bona Novia полуматовый (10л)</a></h4>
+              <div class="sidebar-basket-block__price">
+                <span class="sidebar-basket-block__qty">1 шт</span>
+                Цена: <strong class="sidebar-basket-block__text-orange">12 000 р</strong>
+                <strong> / 5л</strong>
+              </div>
+            </div>
+            <div class="sidebar-basket-block__cartitem">
+              <h4><a href="#">Лак Bona Novia полуматовый (10л)</a></h4>
+              <div class="sidebar-basket-block__price">
+                <span class="sidebar-basket-block__qty">1 шт</span>
+                Цена: <strong class="sidebar-basket-block__text-orange">12 000 р</strong>
+                <strong> / 5л</strong>
+              </div>
+            </div>
+          </form>
+          <div class="sidebar-basket-block__cartresume">
+            <h5>Сумма: 18 600 р</h5>
+            <div class="sidebar-basket-block__cart_block_button">
+              <a href="#">Перейти в корзину</a>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="sidebar-left__fav">
+        <a href="#" class="sidebar-left__fav-link">Отложенные товары</a>
+        (<span id="fav_items_count" class="sidebar-left__fav-count">0</span>)
+      </div>
+      <div class="watched-block">
+        <h4 class="watched-block__title">Вы смотрели</h4>
+        <div class="watched-block__body">
+          <div class="row-line">
+            <div class="column">
+              <a href="#">
+                <img width="40" height="40" align="left" src="images/big-photo.jpg" style="margin-right: 10px;" alt="Дуб &quot;АртПаркет&quot; - штучный паркет">
+              </a>
+            </div>
+            <div class="column">
+              <div class="product-special">
+                <a title="Дуб &quot;АртПаркет&quot; - штучный паркет" href="#">Дуб "АртПаркет" - штучный паркет</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="sidebar-list-block">
+        <li class="sidebar-list-block__item">
+          <p class="sidebar-list-block__text">
+            <img alt="новинка" src="images/delivery_car.gif" align="left">
+            <span>Доставляем интернет заказы в регионы России</span>
+          </p>
+        </li>
+        <li class="sidebar-list-block__item">
+          <p class="sidebar-list-block__text">
+            <img alt="Оплата заказа" src="images/pay_digital.gif" align="left">
+            <span>Вы можете оплатить заказ курьеру наличными или через банк.</span>
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
