@@ -11,6 +11,7 @@ import stickyHeader from './modules/stickyHeader';
 import sidebarMenu from './modules/sidebarMenu';
 import accordionMob from './modules/accordionMob';
 import slimScroll from './modules/slimScroll';
+import showSearchBlock from './modules/showSearchBlock';
 
 (($) => {
   // When DOM is ready
@@ -23,5 +24,6 @@ import slimScroll from './modules/slimScroll';
     sidebarMenu.init();
     accordionMob.init();
     slimScroll.init();
+    showSearchBlock.init();
   });
 })(jQuery);

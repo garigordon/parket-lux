@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Starter Kit</title>
-  <link media="all" rel="stylesheet" href="./css/vendor.css">
-  <link media="all" rel="stylesheet" href="./css/styles.css">
+  <link media="all" rel="stylesheet" href="./css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="./css/styles.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700%7COpen+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
 </head>
@@ -23,7 +23,7 @@
           </a>
           <a class="toggle opened" href="#"> </a>
         </div>
-        <div class="search-block">
+        <div class="search-block js-search-event">
           <form action="#">
             <div class="search-field">
               <input type="text" name="q" value="" placeholder="Что вы ищете?">
@@ -35,6 +35,9 @@
       <div class="sidebar-catalog accordion fltr">
           <div class="sidebar-catalog__header-line">
             <span><i class="fa fa-bars" aria-hidden="true"></i>Паркетные работы</span>
+            <span class="sidebar-catalog__search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"></path></svg>
+            </span>
           </div>
           <div class="pure-menu-list">
             <div class="pure-menu-item pure-menu-has-children accordion-item">
@@ -103,6 +106,9 @@
           </div>
           <div class="sidebar-catalog__header-line">
             <span><i class="fa fa-bars" aria-hidden="true"></i>Каталог товаров</span>
+            <span class="sidebar-catalog__search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"></path></svg>
+            </span>
           </div>
           <div class="pure-menu-list">
             <div class="pure-menu-item pure-menu-has-children accordion-item">
@@ -808,8 +814,8 @@
     </div>
 
   </div>
-  <script src="./js/vendor.js" defer></script>
-  <script src="./js/app.js" defer></script>
+  <script src="./js/vendor.min.js" defer></script>
+  <script src="./js/app.min.js" defer></script>
 
   </root>
 </body>

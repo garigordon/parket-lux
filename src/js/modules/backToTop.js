@@ -2,14 +2,12 @@ var backToTop = (function($) {
   'use strict';
 
   function init() {
-    
 	var offset = 220;
 	var duration = 500;
 
-	jQuery(window).scroll(function() 
+	jQuery(window).scroll(function()
 	{
-	    if (jQuery(this).scrollTop() > offset)
-	    {
+	    if (jQuery(this).scrollTop() > offset) {
 	        jQuery('.back-to-top').fadeIn(duration);
 	    }
 	    else

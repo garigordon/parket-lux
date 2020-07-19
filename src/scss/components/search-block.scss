@@ -1,5 +1,8 @@
 .search-block {
 	overflow: hidden;
+  &.js-search-event {
+    display: none;
+  }
 	input {
     	float: left;
 	    background: #fafafa;
