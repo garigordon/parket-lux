@@ -2,6 +2,11 @@ var navMenu = (function($) {
   'use strict';
 
   function init() {
+    let $gtkMain = $('.gtk_main')
+    let $gtkMenu = $('.gtk_menu')
+
+    if (!$gtkMain.length || !$gtkMenu.length) return
+
     var slideout = new Slideout({
       'panel': document.querySelector('.gtk_main'),
       'menu': document.querySelector('.gtk_menu'),
@@ -24,6 +29,13 @@ var navMenu = (function($) {
       slideout.close();
     });
 
+    $('body').on('mouseup touchend', event => {
+      if (!slideout.isOpen()) return true;
+
+      if (!$gtkMenu.is(event.target) && $gtkMenu.has(event.target).length === 0) {
+        slideout.close()
+      }
+    })
   }
 
   return {
