@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+<root>
+  @@include('../partials/components/nav-menu.html')
+  <div class="wrapper gtk_main slideout-panel">
+    @@include('../partials/components/top-header.html')
+    <div class="header-sticky">
+      @@include('../partials/components/header-home.html')
+    </div>
+    <main>
+      <div class="container">
+        <div class="row-line row-line__between">
+          @@include('../partials/components/sidebar-left.html')
+          @@include('../partials/components/product.html')
+        </div>
+      </div>
+    </main>
+    @@include('../partials/components/footer.html')
+  </div>
+  @@include('../partials/scripts/common.html')
+</root>
+</body>
+</html>
