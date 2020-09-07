@@ -1,3 +1,5 @@
+//import Slideout from 'slideout'
+
 var navMenu = (function($) {
   'use strict';
 

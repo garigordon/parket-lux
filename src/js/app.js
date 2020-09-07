@@ -12,6 +12,7 @@ import sidebarMenu from './modules/sidebarMenu';
 import accordionMob from './modules/accordionMob';
 import slimScroll from './modules/slimScroll';
 import showSearchBlock from './modules/showSearchBlock';
+import "./modules/product-sliders"
 
 (($) => {
   // When DOM is ready

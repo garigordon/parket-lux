@@ -6,4 +6,5 @@ module.exports = [
   './node_modules/slideout/dist/slideout.js',
   './node_modules/jquery-slimscroll/jquery.slimscroll.js',
   './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+  './node_modules/swiper/swiper-bundle.js',
 ];
