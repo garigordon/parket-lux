@@ -6,19 +6,21 @@
     border-bottom: 2px solid #6c6c6c;
     line-height: 52px;
     height: 56px;
+    align-items: center;
   }
 
-  &__title {
+  &__header-title {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     font-size: 17px;
     color: #294886;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
   }
 
   &__item {
     position: relative;
-    width: 270px;
     height: 380px;
     text-align: left;
     margin-right: 20px;
@@ -87,6 +89,10 @@
     text-align: center;
     color: #294886;
     line-height: 37px;
+    outline: none;
+    &:after {
+      display: none;
+    }
     &.swiper-button-disabled {
       color: #aaa;
       cursor: default;
@@ -95,7 +101,7 @@
   }
 
   .block-arrow {
-    width: 93px;
+    width: 110px;
     height: 40px;
     display: flex;
     justify-content: space-between;

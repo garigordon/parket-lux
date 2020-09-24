@@ -36,6 +36,9 @@ body {
   &__right {
     justify-content: flex-end;
   }
+  &__jc-center {
+    justify-content: center;
+  }
 }
 
 .visible-xs {
@@ -266,4 +269,7 @@ main {
 
 .content-sliders {
   padding: 50px 0 0;
+  .slider-blocker {
+    margin: 0 0 50px;
+  }
 }
